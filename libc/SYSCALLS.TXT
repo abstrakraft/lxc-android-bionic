@@ -277,6 +277,11 @@ int __getcpu:getcpu(unsigned *cpu, unsigned *node, void *unused) 345,318,312
 int ioprio_set(int which, int who, int ioprio) 314,289,314
 int ioprio_get(int which, int who) 315,290,315
 
+# timerfd
+int	timerfd_create(clockid_t, int)	350
+int	timerfd_settime(int, int, const struct itimerspec *, struct itimerspec *)	353
+int	timerfd_gettime(int, struct itimerspec *)	354
+
 # other
 int     uname(struct utsname *)  122
 pid_t   __wait4:wait4(pid_t pid, int *status, int options, struct rusage *rusage)   114
