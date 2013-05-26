@@ -40,6 +40,7 @@
 #define	UT_LINESIZE	8
 #define	UT_HOSTSIZE	16
 
+#define RUN_LVL 1
 #define USER_PROCESS 7
 
 struct lastlog
@@ -84,6 +85,7 @@ __BEGIN_DECLS
 int utmpname(const char*);
 void setutent();
 struct utmp* getutent();
+void endutent();
 
 __END_DECLS
 
