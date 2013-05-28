@@ -429,11 +429,6 @@ void endpwent() {
   UNIMPLEMENTED;
 }
 
-mntent* getmntent(FILE* f) {
-  UNIMPLEMENTED;
-  return NULL;
-}
-
 char* ttyname(int fd) { // NOLINT: implementing bad function.
   UNIMPLEMENTED;
   return NULL;

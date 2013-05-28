@@ -280,6 +280,7 @@ libc_common_src_files := \
 	bionic/logd_write.c \
 	bionic/md5.c \
 	bionic/memmove_words.c \
+	bionic/mntent.c \
 	bionic/pututline.c \
 	bionic/realpath.c \
 	bionic/sched_getaffinity.c \
